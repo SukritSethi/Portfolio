@@ -1,0 +1,211 @@
+import React from "react";
+import "../assets/styes/animated.css"
+
+import { FaReact, FaFigma, FaAws, FaLinux } from "react-icons/fa";
+import {
+  SiReactrouter,
+  SiMongodb,
+  SiTailwindcss,
+  SiFirebase,
+  SiPostgresql,
+  SiFastapi,
+  SiPostman,
+} from "react-icons/si";
+import { IoLogoNodejs } from "react-icons/io";
+import { AiOutlineGithub } from "react-icons/ai";
+import { DiGit, DiPython } from "react-icons/di";
+import { GrMysql } from "react-icons/gr";
+import {FiFramer} from "react-icons/fi";
+
+const Animation = () => {
+  return (
+    <div className="bg-grey-900 text-grey-600 w-4/12 rounded-r-6xl">
+      <section>
+        <div className="animated-row">
+          <div className="flex text-4xl">
+            <FaReact className="qwerty"/>
+            <SiReactrouter className="qwerty"/>
+            <IoLogoNodejs className="qwerty"/>
+            <SiTailwindcss className="qwerty"/>
+            <AiOutlineGithub className="qwerty"/>
+            <DiGit className="qwerty"/>
+            <SiFirebase className="qwerty"/>
+            <GrMysql className="qwerty"/>
+            <SiMongodb className="qwerty"/>
+            <SiPostgresql className="qwerty"/>
+            <FaFigma className="qwerty" />
+            <SiFastapi className="qwerty"/>
+            <FaAws className="qwerty"/>
+            <SiPostman className="qwerty"/>
+            <DiPython className="qwerty"/>
+            <FiFramer className="qwerty"/>
+            <FaLinux className="qwerty"/>
+          </div>
+
+        </div>
+        <div className="animated-row">
+          <div className="flex text-4xl">
+            <FaReact className="qwerty"/>
+            <SiReactrouter className="qwerty"/>
+            <IoLogoNodejs className="qwerty"/>
+            <SiTailwindcss className="qwerty"/>
+            <AiOutlineGithub className="qwerty"/>
+            <DiGit className="qwerty"/>
+            <SiFirebase className="qwerty"/>
+            <GrMysql className="qwerty"/>
+            <SiMongodb className="qwerty"/>
+            <SiPostgresql className="qwerty"/>
+            <FaFigma className="qwerty" />
+            <SiFastapi className="qwerty"/>
+            <FaAws className="qwerty"/>
+            <SiPostman className="qwerty"/>
+            <DiPython className="qwerty"/>
+            <FiFramer className="qwerty"/>
+            <FaLinux className="qwerty"/>
+          </div>
+
+     
+
+        </div>
+        <div className="animated-row">
+          <div className="flex text-4xl">
+            <FaReact className="qwerty"/>
+            <SiReactrouter className="qwerty"/>
+            <IoLogoNodejs className="qwerty"/>
+            <SiTailwindcss className="qwerty"/>
+            <AiOutlineGithub className="qwerty"/>
+            <DiGit className="qwerty"/>
+            <SiFirebase className="qwerty"/>
+            <GrMysql className="qwerty"/>
+            <SiMongodb className="qwerty"/>
+            <SiPostgresql className="qwerty"/>
+            <FaFigma className="qwerty" />
+            <SiFastapi className="qwerty"/>
+            <FaAws className="qwerty"/>
+            <SiPostman className="qwerty"/>
+            <DiPython className="qwerty"/>
+            <FiFramer className="qwerty"/>
+            <FaLinux className="qwerty"/>
+          </div>
+
+        </div>
+        <div className="animated-row">
+          <div className="flex text-4xl">
+            <FaReact className="qwerty"/>
+            <SiReactrouter className="qwerty"/>
+            <IoLogoNodejs className="qwerty"/>
+            <SiTailwindcss className="qwerty"/>
+            <AiOutlineGithub className="qwerty"/>
+            <DiGit className="qwerty"/>
+            <SiFirebase className="qwerty"/>
+            <GrMysql className="qwerty"/>
+            <SiMongodb className="qwerty"/>
+            <SiPostgresql className="qwerty"/>
+            <FaFigma className="qwerty" />
+            <SiFastapi className="qwerty"/>
+            <FaAws className="qwerty"/>
+            <SiPostman className="qwerty"/>
+            <DiPython className="qwerty"/>
+            <FiFramer className="qwerty"/>
+            <FaLinux className="qwerty"/>
+          </div>
+
+     
+
+        </div>
+        <div className="animated-row">
+          <div className="flex text-4xl">
+            <FaReact className="qwerty"/>
+            <SiReactrouter className="qwerty"/>
+            <IoLogoNodejs className="qwerty"/>
+            <SiTailwindcss className="qwerty"/>
+            <AiOutlineGithub className="qwerty"/>
+            <DiGit className="qwerty"/>
+            <SiFirebase className="qwerty"/>
+            <GrMysql className="qwerty"/>
+            <SiMongodb className="qwerty"/>
+            <SiPostgresql className="qwerty"/>
+            <FaFigma className="qwerty" />
+            <SiFastapi className="qwerty"/>
+            <FaAws className="qwerty"/>
+            <SiPostman className="qwerty"/>
+            <DiPython className="qwerty"/>
+            <FiFramer className="qwerty"/>
+            <FaLinux className="qwerty"/>
+          </div>
+
+        </div>
+        <div className="animated-row">
+          <div className="flex text-4xl">
+            <FaReact className="qwerty"/>
+            <SiReactrouter className="qwerty"/>
+            <IoLogoNodejs className="qwerty"/>
+            <SiTailwindcss className="qwerty"/>
+            <AiOutlineGithub className="qwerty"/>
+            <DiGit className="qwerty"/>
+            <SiFirebase className="qwerty"/>
+            <GrMysql className="qwerty"/>
+            <SiMongodb className="qwerty"/>
+            <SiPostgresql className="qwerty"/>
+            <FaFigma className="qwerty" />
+            <SiFastapi className="qwerty"/>
+            <FaAws className="qwerty"/>
+            <SiPostman className="qwerty"/>
+            <DiPython className="qwerty"/>
+            <FiFramer className="qwerty"/>
+            <FaLinux className="qwerty"/>
+          </div>
+
+     
+
+        </div>
+        <div className="animated-row">
+          <div className="flex text-4xl">
+            <FaReact className="qwerty"/>
+            <SiReactrouter className="qwerty"/>
+            <IoLogoNodejs className="qwerty"/>
+            <SiTailwindcss className="qwerty"/>
+            <AiOutlineGithub className="qwerty"/>
+            <DiGit className="qwerty"/>
+            <SiFirebase className="qwerty"/>
+            <GrMysql className="qwerty"/>
+            <SiMongodb className="qwerty"/>
+            <SiPostgresql className="qwerty"/>
+            <FaFigma className="qwerty" />
+            <SiFastapi className="qwerty"/>
+            <FaAws className="qwerty"/>
+            <SiPostman className="qwerty"/>
+            <DiPython className="qwerty"/>
+            <FiFramer className="qwerty"/>
+            <FaLinux className="qwerty"/>
+          </div>
+
+        </div>
+        <div className="animated-row">
+          <div className="flex text-4xl">
+            <FaReact className="qwerty"/>
+            <SiReactrouter className="qwerty"/>
+            <IoLogoNodejs className="qwerty"/>
+            <SiTailwindcss className="qwerty"/>
+            <AiOutlineGithub className="qwerty"/>
+            <DiGit className="qwerty"/>
+            <SiFirebase className="qwerty"/>
+            <GrMysql className="qwerty"/>
+            <SiMongodb className="qwerty"/>
+            <SiPostgresql className="qwerty"/>
+            <FaFigma className="qwerty" />
+            <SiFastapi className="qwerty"/>
+            <FaAws className="qwerty"/>
+            <SiPostman className="qwerty"/>
+            <DiPython className="qwerty"/>
+            <FiFramer className="qwerty"/>
+            <FaLinux className="qwerty"/>
+          </div>
+        </div>
+        
+      </section>
+    </div>
+  );
+};
+
+export default Animation;
