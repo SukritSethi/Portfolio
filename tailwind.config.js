@@ -567,6 +567,7 @@ module.exports = {
       "blue-grey-900-contrast": "white",
     
       "grey-main": "#26272f",
+      "grey-main-transluscent": "#26272f99",
       "light-main": "#d9d9d9",
       "light-main-two": "#616161",
       "peach-main": "#f5e3e0",
@@ -640,6 +641,7 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
+      97: '34rem',
       98: '36rem',
       120: '40rem',
       192: '68rem',

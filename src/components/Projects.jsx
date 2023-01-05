@@ -19,11 +19,9 @@ const Projects = () => {
             className="m-5 p-10 pt-5 rounded-3xl h-98 cursor-alias bg-light-main-two bg-opacity-10  hover:shadow-lg hover:shadow-rose-main"
             onMouseEnter={() => {
               setIsProject1(true);
-              console.log("true");
             }}
             onMouseLeave={() => {
               setIsProject1(false);
-              console.log("false");
             }}
           >
             <motion.img
@@ -71,11 +69,9 @@ const Projects = () => {
             className="m-5 p-10 pt-5 rounded-3xl h-98 cursor-alias bg-light-main-two bg-opacity-10  hover:shadow-lg hover:shadow-rose-main"
             onMouseEnter={() => {
               setIsProject2(true);
-              console.log("true");
             }}
             onMouseLeave={() => {
               setIsProject2(false);
-              console.log("false");
             }}
           >
             <motion.img
@@ -123,11 +119,9 @@ const Projects = () => {
             className="m-5 p-10 pt-5 rounded-3xl h-98 cursor-alias bg-light-main-two bg-opacity-10  hover:shadow-lg hover:shadow-rose-main"
             onMouseEnter={() => {
               setIsProject3(true);
-              console.log("true");
             }}
             onMouseLeave={() => {
               setIsProject3(false);
-              console.log("false");
             }}
           >
             <motion.img
@@ -175,11 +169,9 @@ const Projects = () => {
             className="m-5 p-10 pt-5 rounded-3xl h-98 cursor-alias bg-light-main-two bg-opacity-10  hover:shadow-lg hover:shadow-rose-main"
             onMouseEnter={() => {
               setIsProject4(true);
-              console.log("true");
             }}
             onMouseLeave={() => {
               setIsProject4(false);
-              console.log("false");
             }}
           >
             <motion.img

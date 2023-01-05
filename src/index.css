@@ -1,4 +1,4 @@
-@tailwind base;
+ @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -35,4 +35,21 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #e8b4bc;
+}
+
+.indexdedo{
+  z-index: 1000;
+}
+
+.chhotaindex{
+  z-index: -1;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #57596d77;
 }
