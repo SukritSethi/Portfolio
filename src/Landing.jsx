@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import img from "./assets/media/logo.png";
 import sukrit from "./assets/media/Group1.png";
 
@@ -17,7 +17,7 @@ import Modal from "react-modal";
 
 const Landing = () => {
   useEffect(() => {
-    console.clear();
+    // console.clear();
     console.log("Let's connect");
     console.log("sukritsethi18@gmail.com");
   }, []);
@@ -25,6 +25,20 @@ const Landing = () => {
   function closeModal() {
     setIsOpen(false);
   }
+
+
+  const [isMobile,setisMobile] = useState(true);
+  useEffect(() => {
+    if(document.documentElement.clientWidth > 500){
+      setisMobile(false);
+    }
+
+  }, [])
+  
+  
+
+
+  
   return (
     <>
       <Modal
@@ -61,9 +75,9 @@ const Landing = () => {
         </div>
       </Modal>
       <div className="absolute w-full">
-        <div className="flex h-16 justify-between sticky top-0 z-10 bg-grey-main">
+        <div className="flex h-16 justify-between sticky top-0 z-10 bg-grey-main ">
           <img src={img} alt="" />
-          <div className="flex ">
+          <div className={`flex ${isMobile ?'hidden':null }`}>
             <div className="mx-5 mt-5">
               <span className="text-peach-main cursor-pointer hover:underline">
                 about me
@@ -105,9 +119,9 @@ const Landing = () => {
         className="absolute h-98 top-28 right-0 cursor-pointer hover:scale-110 transition ease-in-out duration-300"
         alt=""
       />
-      <img src={webdev} className="absolute -right-8 top-98" alt="" />
-      <img src={compcode} className="absolute -left-8 top-192" alt="" />
-      <img src={designer} className="absolute -right-8 top-288 mb-10" alt="" />
+      <img src={webdev} className={`absolute -right-8 top-98 ${isMobile?'hidden':null}`} alt="" />
+      <img src={compcode} className={`absolute -left-8 top-192 ${isMobile?'hidden':null}`} alt="" />
+      <img src={designer} className={`absolute -right-8 top-288 mb-10 ${isMobile?'hidden':null}`} alt="" />
     </>
   );
 };

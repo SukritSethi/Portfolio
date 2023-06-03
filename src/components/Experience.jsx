@@ -14,14 +14,14 @@ const Experience = () => {
           <div className="text-peach-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit excepturi illum nobis veritatis iure eos deleniti optio, enim autem laborum voluptas modi molestiae tenetur ipsam error, voluptates eligendi itaque! Aliquid!</div>
         </div>
         
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <div className="text-2xl text-rose-main">Rit-Man</div>
           <div className="text-xl text-green-main">
             (Co-founder)
           </div>
           <div className="text-rose-main">Jan 2023 - Current</div>
           <div className="text-peach-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit excepturi illum nobis veritatis iure eos deleniti optio, enim autem laborum voluptas modi molestiae tenetur ipsam error, voluptates eligendi itaque! Aliquid!</div>
-        </div>
+        </div> */}
 
         <div className=" mb-12">
           <div className="text-2xl text-rose-main">OWASP Student Chapter and Thapar</div>

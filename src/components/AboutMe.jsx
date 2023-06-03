@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Animation from "./Animation";
 import { CodeBlock, tomorrowNightEighties } from "react-code-blocks";
 
 const AboutMe = () => {
+  const [isMobile, setisMobile] = useState(true);
+
+  useEffect(() => {
+      if(document.documentElement.clientWidth > 500){
+        setisMobile(false);
+      }
+
+    }, [])
   return (
-    <div className=" mt-12 text-white flex h-96">
-      <div className="basis-5/12 mt-12 h-72 animation-bg">
+    <div className=" mt-12 text-white flex h-96 widthscreen">
+      <div className={`basis-5/12 mt-12 h-72 animation-bg hidden ${isMobile?'hidden':null}`}>
         <Animation />
       </div>
       <div className="basis-7/12 rounded-6xl m-2 mr-12 ">
         <CodeBlock
-        className="rounded-6xl"
+          className="rounded-6xl"
           text={`class Me{
             public:
                 string name = "Sukrit Sethi";
