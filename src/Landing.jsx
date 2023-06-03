@@ -28,9 +28,14 @@ const Landing = () => {
 
 
   const [isMobile,setisMobile] = useState(true);
+  const [isSmall,setisSmall] = useState(true);
   useEffect(() => {
     if(document.documentElement.clientWidth > 500){
       setisMobile(false);
+    }
+
+    if(document.documentElement.clientWidth > 1000){
+      setisSmall(false);
     }
 
   }, [])
@@ -74,7 +79,7 @@ const Landing = () => {
           </div>
         </div>
       </Modal>
-      <div className="absolute w-full">
+      <div className="absolute ">
         <div className="flex h-16 justify-between sticky top-0 z-10 bg-grey-main ">
           <img src={img} alt="" />
           <div className={`flex ${isMobile ?'hidden':null }`}>
@@ -116,12 +121,12 @@ const Landing = () => {
       </div>
       <img
         src={sukrit}
-        className="absolute h-98 top-28 right-0 cursor-pointer hover:scale-110 transition ease-in-out duration-300"
+        className={`absolute h-98 top-28 right-0 cursor-pointer hover:scale-110 transition ease-in-out duration-300 ${isSmall?'hidden':null}`}
         alt=""
       />
-      <img src={webdev} className={`absolute -right-8 top-98 ${isMobile?'hidden':null}`} alt="" />
-      <img src={compcode} className={`absolute -left-8 top-192 ${isMobile?'hidden':null}`} alt="" />
-      <img src={designer} className={`absolute -right-8 top-288 mb-10 ${isMobile?'hidden':null}`} alt="" />
+      <img src={webdev} className={`absolute -right-8 top-98 ${isSmall?'hidden':null}`} alt="" />
+      <img src={compcode} className={`absolute -left-8 top-192 ${isSmall?'hidden':null}`} alt="" />
+      <img src={designer} className={`absolute -right-8 top-288 mb-10 ${isSmall?'hidden':null}`} alt="" />
     </>
   );
 };
