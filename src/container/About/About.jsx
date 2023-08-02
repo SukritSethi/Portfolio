@@ -1,16 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {images} from '../../constants/index';
-import {urlFor, client} from '../../client';
+import { images } from "../../constants/index";
 import { AppWrap, MotionWrap } from "../../wrapper";
 
 import "./About.scss";
 
-
 const abouts = [
-  { title: "Web Devlopment", description: "I am good web developer", imgUrl: images.about01 },
-  { title: "UI/UX", description: "I am good web developer" , imgUrl: images.about02},
-  { title: "Web3 Devlopment", description: "I am good web developer" , imgUrl: images.about04},
+  {
+    title: "Web Devlopment",
+    description:
+      "Highly skilled web developer proficient in ReactJS, Sass, Tailwind CSS, Node.js, JavaScript, and Firebase. Adept in making dynamic applications with responsive interfaces, animations, and efficient server-side functionality. Innovative problem-solver trying to deliver exceptional solutions that exceed expectations.",
+    imgUrl: images.about01,
+  },
+  {
+    title: "UI/UX",
+    description:
+      "As a design ethuisast, I have grown as a UI/UX designer with extensive experience in Figma, trying to craft exceptional user interfaces. My previous professional experience in designing wireframes, MVPs, and application flows allows me to create intuitive and visually appealing experiences. I have a keen eye for detail and my user-centric approach helps in designing seamless interactions and engaging designs, making me a valuable asset in delivering captivating digital solutions.",
+    imgUrl: images.about02,
+  },
+  {
+    title: "Web3 Devlopment",
+    description: "As an aspiring web3 developer, I am currently in the learning phase, exploring Solidity and various web3 protocols. I am excited about creating solutions that connect web2 with web3 technologies. Embracing decentralized applications (dApps) and blockchain, I am dedicated to honing my skills and contributing to the evolving web3 ecosystem. I  strive to have a positive impact in the decentralized technology space.",
+    imgUrl: images.about04,
+  },
   // { title: "Web3 Devlopment", description: "I am good web developer" , imgUrl: images.about03},
 ];
 
@@ -24,8 +36,7 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I Know that <span>Good Design</span> <br />
-        means <span>Good Business</span>
+        The <span>Skills</span> I've Gathered So Far
       </h2>
 
       <div className="app__profiles">
@@ -51,9 +62,8 @@ const About = () => {
   );
 };
 
-
 export default AppWrap(
-  MotionWrap(About, 'app__about'),
-  'about',
-  'app__whitebg',
+  MotionWrap(About, "app__about"),
+  "about",
+  "app__whitebg"
 );
