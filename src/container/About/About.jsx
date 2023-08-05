@@ -56,6 +56,7 @@ const About = () => {
               {about.description}
             </p>
           </motion.div>
+          
         ))}
       </div>
     </>

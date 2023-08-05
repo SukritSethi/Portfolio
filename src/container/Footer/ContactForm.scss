@@ -1,0 +1,55 @@
+textarea,
+input {
+  &:hover {
+    box-shadow: 0 0 25px var(--primary-color);
+  }
+  margin: 1rem 0;
+}
+
+#contactform__submit {
+  background-color: var(--secondary-color);
+  font-weight: 500;
+  color: var(--white-color);
+
+  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2430af;
+  }
+}
+
+textarea {
+    resize: none;
+}
+
+.contactform__modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centers;
+    flex-basis: 1;
+}
+
+.contactform__tick__div{
+    display: flex;
+    justify-content: center;
+}
+
+.contactform__tick{
+    color:#8FD5A6;
+    font-size: 3rem;
+}
+
+.contactform__close{
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    margin-top: 2rem;
+
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+

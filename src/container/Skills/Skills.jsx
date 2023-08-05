@@ -13,15 +13,23 @@ import './Skills.scss';
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([
-    {year: 'June 2022 - Nov 2022', works: [{name: 'Software Developer Associate', company: 'Ikarus 3D', desc: 'lorem ipsum aerjh ergkj rn wergkjbwerrn wegkjbwembn wegkjbsdmbfvoj wekjwddb vdljbwdmfn wdoiobhsdjhfbwrgj'}]},
-    {year: 'September 2021 - Current', works: [{name: 'Logistics Secretary', company: 'OWASP Student Chapter', desc: 'lorem ipsum aerjh ergkj rn wergkjbwerrn wegkjbwembn wegkjbsdmbfvoj wekjwddb vdljbwdmfn wdoiobhsdjhfbwrgj' }]}
+    {year: 'June 2022 - Nov 2022', works: [{name: 'Software Developer Associate', company: 'Ikarus 3D', desc: `Designed and developed the first MVP iteration of the organization’s new venture, ”Ikarus Nest”. Worked in Figma,
+    ReactJs and Django.Handled the containerization and deployment of the MVP. Used Docker and Amazon Web Services.Developed custom web-components to be integrated in Nest. Worked in ReactJs and Typescript`}]},
+    {year: 'September 2021 - Current', works: [{name: 'Logistics Secretary', company: 'OWASP Student Chapter', desc:  `Helped organize HackOwasp4.0, an MLH partner hackathon. Contributed to society’s open source projects. Conducted workshops to teach juniors about tools such as Git and GitHub` }]}
   ]);
   const [skills, setSkills] = useState([
-    { name: "Web Devlopment", brColor: "red", icon: images.react },
-    { name: "Web Devlopment", brColor: "red", icon: images.react },
-    { name: "Web Devlopment", brColor: "red", icon: images.react },
-    { name: "Web Devlopment", brColor: "red", icon: images.react },
-    { name: "Web Devlopment", brColor: "red", icon: images.react },
+    { name: "ReactJS", brColor: "", icon: images.react },
+    { name: "UI/UX", brColor: "", icon: images.figma },
+    { name: "Git", brColor: "", icon: images.git },
+    { name: "NodeJS", brColor: "", icon: images.node },
+    { name: "Django", brColor: "#103E2E", icon: images.django },
+    { name: "SASS", brColor: "", icon: images.sass },
+    { name: "Firebase", brColor: "#1B3A57", icon: images.firebase },
+    { name: "C++", brColor: "", icon: images.cpp },
+    { name: "Python", brColor: "", icon: images.python },
+    { name: "Tailwind", brColor: "", icon: images.tailwind },
+    { name: "Javascript", brColor: "", icon: images.javascript },
+    { name: "Firebase", brColor: "", icon: images.firebase },
     
   ]);
 
@@ -53,7 +61,7 @@ const Skills = () => {
             >
               <div
                 className="app__flex"
-                style={{ backgroundColor: skill.bgColor }}
+                style={{ backgroundColor: skill.brColor }}
               >
                 <img src={skill.icon} alt={skill.name} />
               </div>
@@ -84,14 +92,7 @@ const Skills = () => {
                       <p className="p-text" id="p-text-company-name">{work.company}</p>
                       <p className="p-text">{work.desc}</p>
                     </motion.div>
-                    {/* <ReactTooltip
-                      id={work.name}
-                      effect="solid"
-                      arrowColor="#fff"
-                      className="skills-tooltip"
-                    >
-                      <p>{work.desc}</p>
-                    </ReactTooltip> */}
+                    
                   </>
                 ))}
               </motion.div>
