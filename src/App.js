@@ -1,18 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import './App.scss';
-import { About, Footer, Header, Skills, Work } from './container';
-import { Navbar } from './components';
+import "./App.scss";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import Certificates from "./container/Certificates/Certificates";
 
 const App = () => (
-  <div className="app">
-    <Navbar />
-    <Header />
-    <About />
-    <Work />
-    <Skills />
-    <Footer />
-  </div>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/certificates" element={<Certificates />} />
+    <Route path="/certificates/*" element={<Certificates />} />
+  </Routes>
 );
 
 export default App;
