@@ -21,30 +21,32 @@ import './Work.scss';
 // ];
 
 const Work = () => {
-  const [works, setWorks] = useState([
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web3', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['AI/CV', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about04 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['UI/UX', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['UI/UX', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web Dev', 'UI/UX', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about03 ,codeLink:'www.github.com', tags:['Game Dev', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
+  const [works, setWorks] = useState([]);
+  // const [works, setWorks] = useState([
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web3', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['AI/CV', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about04 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['UI/UX', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['UI/UX', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web Dev', 'UI/UX', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about03 ,codeLink:'www.github.com', tags:['Game Dev', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
   
-  ]);
-  const [filterWork, setFilterWork] = useState([
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web3', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['AI/CV', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about04 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['UI/UX', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['UI/UX', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web Dev', 'UI/UX', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about03 ,codeLink:'www.github.com', tags:['Game Dev', 'All'] },
-    { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
+  // ]);
+  const [filterWork, setFilterWork] = useState([]);
+  // const [filterWork, setFilterWork] = useState([
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web3', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['AI/CV', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about04 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['UI/UX', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about02 ,codeLink:'www.github.com', tags:['UI/UX', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web Dev', 'UI/UX', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about03 ,codeLink:'www.github.com', tags:['Game Dev', 'All'] },
+  //   { title: "Web3", description: "I am good web developer",projectLink:'www.youtube.com', imgUrl: images.about01 ,codeLink:'www.github.com', tags:['Web Dev', 'All'] },
   
-  ]);
+  // ]);
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
@@ -74,7 +76,8 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section(This section is not yet completed D: )</h2>
+      {/* <h2 className="head-text">My Creative <span>Portfolio</span> Section(this section is incomplete... )</h2> */}
+      <h2 className="head-text">My <span>Projects</span> (this section is incomplete... )</h2>
 
       <div className="app__work-filter">
         {['Web Dev', 'UI/UX', 'AI/CV', 'Web3', 'Game Dev', 'All'].map((item, index) => (
