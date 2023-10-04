@@ -21,6 +21,10 @@ import django from '../assets/django.png';
 import firebase from '../assets/firebase.png';
 import tailwind from '../assets/tailwind.png';
 
+import about__web from '../assets/about__web.jpg';
+import about__web3 from '../assets/about__web3.jpg';
+import about__uiux from '../assets/about__uiux.png';
+import about__ds from '../assets/about__ds.webp';
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
@@ -58,6 +62,10 @@ export default {
   sass,
   typescript,
   vue,
+  about__web,
+  about__web3,
+  about__uiux,
+  about__ds,
   about01,
   about02,
   about03,

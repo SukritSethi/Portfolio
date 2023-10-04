@@ -1,21 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 // import { Tooltip as ReactTooltip } from 'react-tooltip';
 // import { AppWrap } from '../../wrapper';
-import { images } from '../../constants';
-import { AppWrap, MotionWrap } from '../../wrapper';
-import './Skills.scss';
+import { images } from "../../constants";
+import { AppWrap, MotionWrap } from "../../wrapper";
+import "./Skills.scss";
 // import 'react-tooltip/dist/react-tooltip.css'
 // const skills = [
 //   { name: "Web Devlopment", brColor: "red", icon: images.about01 },
-  
+
 // ];
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([
-    {year: 'June 2022 - Nov 2022', works: [{name: 'Software Developer Associate', company: 'Ikarus 3D', desc: `Designed and developed the first MVP iteration of the organization’s new venture, ”Ikarus Nest”. Worked in Figma,
-    ReactJs and Django.Handled the containerization and deployment of the MVP. Used Docker and Amazon Web Services.Developed custom web-components to be integrated in Nest. Worked in ReactJs and Typescript`}]},
-    {year: 'September 2021 - Current', works: [{name: 'Logistics Secretary', company: 'OWASP Student Chapter', desc:  `Helped organize HackOwasp4.0, an MLH partner hackathon. Contributed to society’s open source projects. Conducted workshops to teach juniors about tools such as Git and GitHub` }]}
+    {
+      year: "June 2022 - Nov 2022",
+      works: [
+        {
+          name: "Software Developer Associate",
+          company: "Ikarus 3D",
+          desc: `Designed and developed the first MVP iteration of the organization’s new venture, ”Ikarus Nest”. Worked in Figma,
+    ReactJs and Django.Handled the containerization and deployment of the MVP. Used Docker and Amazon Web Services.Developed custom web-components to be integrated in Nest. Worked in ReactJs and Typescript`,
+        },
+      ],
+    },
+    {
+      year: "September 2021 - Current",
+      works: [
+        {
+          name: "Logistics Secretary",
+          company: "OWASP Student Chapter",
+          desc: `Helped organize HackOwasp4.0, an MLH partner hackathon. Contributed to society’s open source projects. Conducted workshops to teach juniors about tools such as Git and GitHub`,
+        },
+      ],
+    },
   ]);
   const [skills, setSkills] = useState([
     { name: "ReactJS", brColor: "", icon: images.react },
@@ -30,7 +48,6 @@ const Skills = () => {
     { name: "Tailwind", brColor: "", icon: images.tailwind },
     { name: "Javascript", brColor: "", icon: images.javascript },
     { name: "Firebase", brColor: "", icon: images.firebase },
-    
   ]);
 
   // useEffect(() => {
@@ -71,10 +88,7 @@ const Skills = () => {
         </motion.div>
         <div className="app__skills-exp">
           {experiences.map((experience) => (
-            <motion.div
-              className="app__skills-exp-item"
-              key={experience.year}
-            >
+            <motion.div className="app__skills-exp-item" key={experience.year}>
               <div className="app__skills-exp-year">
                 <p className="bold-text">{experience.year}</p>
               </div>
@@ -89,10 +103,11 @@ const Skills = () => {
                       key={work.name}
                     >
                       <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text" id="p-text-company-name">{work.company}</p>
+                      <p className="p-text" id="p-text-company-name">
+                        {work.company}
+                      </p>
                       <p className="p-text">{work.desc}</p>
                     </motion.div>
-                    
                   </>
                 ))}
               </motion.div>
@@ -105,8 +120,7 @@ const Skills = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Skills, 'app__skills'),
-  'skills',
-  'app__whitebg',
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__whitebg"
 );
-
