@@ -30,6 +30,12 @@ import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
+import work_Portfolio from '../assets/work_Portfolio.png';
+import work_Videocall from '../assets/work_Video-call.png';
+import work_CodePenClone from '../assets/work_CodePenClone.png';
+import work_H2Bro from '../assets/work_H2Bro.png';
+import work_WeatherApp from '../assets/work_WeatherApp.png';
+
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
@@ -82,5 +88,10 @@ export default {
   spotify,
   django,
   firebase,
-  tailwind
+  tailwind,
+  work_Portfolio,
+  work_Videocall,
+  work_CodePenClone,
+  work_H2Bro,
+  work_WeatherApp,
 };

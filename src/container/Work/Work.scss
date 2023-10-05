@@ -49,6 +49,8 @@
   
     .app__work-item {
       width: 270px;
+      // height:450px;
+      // border:1px red solid;
       flex-direction: column;
   
       margin: 2rem;
@@ -133,6 +135,8 @@
   .app__work-content {
     padding: 0.5rem;
     width: 100%;
+    height:150px;
+    // border: 1px green solid;
     position: relative;
     flex-direction: column;
   
