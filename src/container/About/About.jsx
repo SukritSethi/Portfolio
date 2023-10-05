@@ -24,8 +24,8 @@ const abouts = [
     imgUrl: images.about__web3,
   },
   {
-    title: "Web3 Devlopment",
-    description: "As an aspiring web3 developer, I am currently in the learning phase, exploring Solidity and various web3 protocols. I am excited about creating solutions that connect web2 with web3 technologies. Embracing decentralized applications (dApps) and blockchain, I am dedicated to honing my skills and contributing to the evolving web3 ecosystem. I  strive to have a positive impact in the decentralized technology space.",
+    title: "Data Science",
+    description: "In the ever going pursuit of staying a relevant computer science professional, I have recently picked up Data Sciences as a new field to learn. I have been focusing majorly on clearing my fundamentals and have made a few projects using Pandas, mySQL and PowerBI.",
     imgUrl: images.about__ds,
   },
   // { title: "Web3 Devlopment", description: "I am good web developer" , imgUrl: images.about03},
